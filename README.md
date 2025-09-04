@@ -63,11 +63,11 @@ Brief explanation about MDNS
 - **enable-http** :- Only run once while creating the host to setup backend api for frontend.
 - Eg: Run command
 ```console
-    go run main.go --port 9000 --same_string xyz --room myroom --nick Abhi --enable-http true
+    go run main.go --port 9000 --same_string xyz --room myroom --nick Bhushan --enable-http true
 ```
 - Run command in another terminal/device connceted together via Wifi/Ethernet LAN to create another peer.
 ```console
 docker network create talklocal
-docker run -it --rm --network talklocal -p 9003:9001 talklocal -port=9001 -nick=kunj -same_string=demo
-docker run -it --rm --network talklocal -p 9002:9001 talklocal -port=9001 -nick=viraj -same_string=demo
+docker run -it --rm --network talklocal -p 9003:9001 talklocal -port=9001 -nick=Hemant -same_string=demo
+docker run -it --rm --network talklocal -p 9002:9001 talklocal -port=9001 -nick=Raj -same_string=demo
 ```
